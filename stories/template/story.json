@@ -3,7 +3,7 @@
   "id": "foundphone-personal-story",
   "title": "捡手机",
   "description": "个人化手机故事",
-  "revision": 5,
+  "revision": 6,
   "phone": {
     "owner": "机主",
     "date": "2026-10-26",
@@ -272,6 +272,118 @@
         "sender": "测试用户",
         "kind": "text",
         "meta": {}
+      },
+      {
+        "id": "leak-call-01",
+        "title": "未接来电",
+        "body": "连续来电，未接听。",
+        "time": "10:04",
+        "sender": "+1 (202) 555-0147",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-02",
+        "title": "未接来电",
+        "body": "连续第 2 次来电，未接听。",
+        "time": "10:05",
+        "sender": "+1 (202) 555-0147",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-03",
+        "title": "未接来电",
+        "body": "陌生号码来电，未接听。",
+        "time": "10:07",
+        "sender": "+1 (202) 555-0182",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-04",
+        "title": "未接来电",
+        "body": "陌生号码来电，未接听。",
+        "time": "10:08",
+        "sender": "+1 (202) 555-0176",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-05",
+        "title": "未接来电",
+        "body": "连续第 3 次来电，未接听。",
+        "time": "10:10",
+        "sender": "+1 (202) 555-0147",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-06",
+        "title": "未接来电",
+        "body": "陌生号码来电，未接听。",
+        "time": "10:13",
+        "sender": "+1 (202) 555-0129",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-07",
+        "title": "未接来电",
+        "body": "陌生号码来电，未接听。",
+        "time": "10:15",
+        "sender": "+1 (202) 555-0194",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-call-08",
+        "title": "未接来电",
+        "body": "连续来电，未接听。",
+        "time": "10:17",
+        "sender": "+1 (202) 555-0147",
+        "avatar": "",
+        "kind": "call",
+        "folder": "通话记录",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
       }
     ],
     "contacts": [
@@ -634,6 +746,286 @@
           "tag": "讨论升温",
           "fictional": "true"
         }
+      },
+      {
+        "id": "leak-wb-01",
+        "title": "你就是热搜里那个女的？",
+        "body": "别装死，出来说清楚。",
+        "time": "09:51",
+        "sender": "鑫鑫守护队_0912",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-02",
+        "title": "@机主 你最好出来解释一下",
+        "body": "蹭热度也有个限度吧？",
+        "time": "09:51",
+        "sender": "小朱不许受委屈",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-03",
+        "title": "私信攻击",
+        "body": "真会挑时候，赶紧离他远点。",
+        "time": "09:52",
+        "sender": "朱朱星球-小号",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-04",
+        "title": "@机主",
+        "body": "别以为不说话就没事了，我们都看着呢。",
+        "time": "09:52",
+        "sender": "今天也为小朱打call",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-05",
+        "title": "你配吗？",
+        "body": "别再靠近他了行不行，真的烦。",
+        "time": "09:53",
+        "sender": "鑫火燎原",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-06",
+        "title": "私信攻击",
+        "body": "看到你就来气，别再出现在他相关话题里。",
+        "time": "09:53",
+        "sender": "小朱的第999颗星",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-07",
+        "title": "@机主",
+        "body": "姐妹们都来看看这个账号，疑似就是她。",
+        "time": "09:54",
+        "sender": "追鑫日记",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-08",
+        "title": "私信攻击",
+        "body": "不回应就是默认？出来讲清楚啊。",
+        "time": "09:54",
+        "sender": "星星不睡觉",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-09",
+        "title": "@机主",
+        "body": "别把自己当回事，谁知道是不是你故意炒作。",
+        "time": "09:55",
+        "sender": "朱志鑫专属小行星",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-10",
+        "title": "私信攻击",
+        "body": "你最好别再发任何跟他有关的东西。",
+        "time": "09:55",
+        "sender": "鑫动一瞬间",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-11",
+        "title": "@机主",
+        "body": "已经有人在讨论你了，赶紧出来。",
+        "time": "09:56",
+        "sender": "小朱今天营业了吗",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-12",
+        "title": "私信攻击",
+        "body": "真服了，凭什么让他被连累。",
+        "time": "09:56",
+        "sender": "星河邮递员",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-13",
+        "title": "@机主",
+        "body": "别躲，大家只是想知道你是谁。",
+        "time": "09:57",
+        "sender": "朱朱观察站",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-14",
+        "title": "私信攻击",
+        "body": "别再蹭朱志鑫热度了，听见没有。",
+        "time": "09:57",
+        "sender": "月亮代表小朱",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-15",
+        "title": "@机主",
+        "body": "不要再装无辜了。",
+        "time": "09:58",
+        "sender": "鑫鑫向荣",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-16",
+        "title": "私信攻击",
+        "body": "看见你的账号就烦，取关并消失吧。",
+        "time": "09:58",
+        "sender": "小朱的白月光",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-17",
+        "title": "@机主",
+        "body": "大家别放过这个账号，问问她到底怎么回事。",
+        "time": "09:59",
+        "sender": "星星落在鑫里",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-18",
+        "title": "私信攻击",
+        "body": "你根本不知道粉丝为了他付出了多少。",
+        "time": "10:00",
+        "sender": "守护朱志鑫",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-19",
+        "title": "@机主",
+        "body": "这件事没完，等着大家来问你。",
+        "time": "10:00",
+        "sender": "鑫火永不熄",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-wb-20",
+        "title": "私信攻击",
+        "body": "别再出现在他身边了。",
+        "time": "10:01",
+        "sender": "今天也爱小朱",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
       }
     ],
     "redbook": [
@@ -644,6 +1036,90 @@
         "sender": "测试用户",
         "kind": "text",
         "meta": {}
+      },
+      {
+        "id": "leak-red-01",
+        "title": "私信",
+        "body": "姐妹，你是不是热搜里被拍到的女生？",
+        "time": "10:02",
+        "sender": "橘子汽水不加冰",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-red-02",
+        "title": "私信",
+        "body": "你这样会影响他工作的，能不能离远点。",
+        "time": "10:03",
+        "sender": "小朱的星星灯",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-red-03",
+        "title": "私信",
+        "body": "别再蹭朱志鑫了，求你。",
+        "time": "10:04",
+        "sender": "晚风守护鑫",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-red-04",
+        "title": "@机主",
+        "body": "有人把你账号搬到讨论帖里了，注意一下。",
+        "time": "10:05",
+        "sender": "小熊今天追鑫了吗",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-red-05",
+        "title": "私信",
+        "body": "你到底是谁？为什么跟他一起出现？",
+        "time": "10:06",
+        "sender": "星星落在鑫里",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-red-06",
+        "title": "私信",
+        "body": "别把粉丝当傻子。",
+        "time": "10:07",
+        "sender": "小朱的月亮",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
       }
     ],
     "douyin": [
@@ -654,6 +1130,104 @@
         "sender": "测试用户",
         "kind": "text",
         "meta": {}
+      },
+      {
+        "id": "leak-dy-01",
+        "title": "私信",
+        "body": "你是不是微博里那个女生？出来回应。",
+        "time": "10:01",
+        "sender": "鑫鑫的守护者",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-dy-02",
+        "title": "私信",
+        "body": "别蹭他流量了，真的很难看。",
+        "time": "10:02",
+        "sender": "朱朱不熬夜",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-dy-03",
+        "title": "私信",
+        "body": "你给他带来多少麻烦知道吗？",
+        "time": "10:02",
+        "sender": "小朱星球",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-dy-04",
+        "title": "@机主",
+        "body": "有人说你就是那个女生，评论区都在问。",
+        "time": "10:03",
+        "sender": "追星小分队",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-dy-05",
+        "title": "私信",
+        "body": "离他远一点吧，求你了。",
+        "time": "10:04",
+        "sender": "鑫鑫今天开心吗",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-dy-06",
+        "title": "私信",
+        "body": "不要再装没看见了。",
+        "time": "10:05",
+        "sender": "小朱的小星星",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-dy-07",
+        "title": "@机主",
+        "body": "看到请回复，大家都想知道真相。",
+        "time": "10:06",
+        "sender": "星河追鑫",
+        "avatar": "",
+        "kind": "message",
+        "folder": "私信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
       }
     ],
     "bilibili": [
@@ -879,6 +1453,106 @@
         "id": "test-appstore",
         "title": "测试内容",
         "body": "这是一条测试内容。"
+      }
+    ],
+    "messages": [
+      {
+        "id": "leak-sms-01",
+        "title": "未知号码短信",
+        "body": "你是不是网上说的那个人？赶紧出来解释。",
+        "time": "10:03",
+        "sender": "+1 (202) 555-0147",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-sms-02",
+        "title": "未知号码短信",
+        "body": "别再靠近朱志鑫了。",
+        "time": "10:04",
+        "sender": "+1 (202) 555-0182",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-sms-03",
+        "title": "未知号码短信",
+        "body": "大家都在找你，你不可能一直躲着。",
+        "time": "10:06",
+        "sender": "+1 (202) 555-0176",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-sms-04",
+        "title": "未知号码短信",
+        "body": "不要再给他添麻烦。",
+        "time": "10:08",
+        "sender": "+1 (202) 555-0129",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-sms-05",
+        "title": "未知号码短信",
+        "body": "回消息！你到底是不是她？",
+        "time": "10:09",
+        "sender": "+1 (202) 555-0194",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-sms-06",
+        "title": "未知号码短信",
+        "body": "我只是想问清楚，你为什么不回？",
+        "time": "10:11",
+        "sender": "+1 (202) 555-0163",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "leak-sms-07",
+        "title": "未知号码短信",
+        "body": "别再出现在他的相关话题里。",
+        "time": "10:12",
+        "sender": "+1 (202) 555-0155",
+        "avatar": "",
+        "kind": "sms",
+        "folder": "短信",
+        "meta": {
+          "fictional": "true",
+          "incident": "围攻与隐私泄露剧情"
+        }
       }
     ]
   },
