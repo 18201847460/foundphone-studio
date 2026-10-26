@@ -3,7 +3,7 @@
   "id": "foundphone-personal-story",
   "title": "捡手机",
   "description": "个人化手机故事",
-  "revision": 4,
+  "revision": 5,
   "phone": {
     "owner": "机主",
     "date": "2026-10-26",
@@ -241,6 +241,24 @@
           "id": "zhuxixin-06",
           "body": "那就好～今天也辛苦啦",
           "senderId": "owner"
+        },
+        {
+          "id": "zhuxixin-07",
+          "body": "别看微博。",
+          "senderId": "zhuxixin",
+          "time": "09:48"
+        },
+        {
+          "id": "zhuxixin-08",
+          "body": "我已经找公司了。",
+          "senderId": "zhuxixin",
+          "time": "09:48"
+        },
+        {
+          "id": "zhuxixin-09",
+          "body": "现在网上那些都还没弄清楚，别跟着他们的话走。",
+          "senderId": "zhuxixin",
+          "time": "09:49"
         }
       ]
     }
