@@ -34,7 +34,7 @@ import {
 
 type LocalSocialComment = { author: string; body: string };
 type LocalSocialPost = {
-  id: string; body: string; title: string; media: string; createdAt: string;
+  id: string; body: string; title: string; media: string; createdAt: string; author: string;
   likes: number; liked: boolean; saved: boolean; comments: LocalSocialComment[];
 };
 type LocalSocialState = { posts: LocalSocialPost[] };
@@ -94,7 +94,7 @@ function LocalSocialFeed({ p, app, items }: { p: Props; app: "weibo" | "redbook"
   const save = (next: LocalSocialState) => setRaw(JSON.stringify(next));
   const basePosts: LocalSocialPost[] = items.map((item) => ({
     id: item.id, title: item.title, body: item.body, media: item.media,
-    createdAt: item.time, likes: item.likes, liked: false, saved: item.favorite,
+    createdAt: item.time, author: item.sender, likes: item.likes, liked: false, saved: item.favorite,
     comments: item.comments.map((comment) => {
       const split = comment.indexOf("：");
       return split > -1 ? { author: comment.slice(0, split), body: comment.slice(split + 1) } : { author: "评论", body: comment };
@@ -110,7 +110,7 @@ function LocalSocialFeed({ p, app, items }: { p: Props; app: "weibo" | "redbook"
   const publish = (body: string, media: string) => {
     const now = new Date();
     const createdAt = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,"0")}-${String(now.getDate()).padStart(2,"0")} ${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
-    const post: LocalSocialPost = { id: `local-${Date.now()}-${Math.random().toString(36).slice(2,7)}`, title: body.slice(0, 36) || "图片分享", body, media, createdAt, likes: 0, liked: false, saved: false, comments: [] };
+    const post: LocalSocialPost = { id: `local-${Date.now()}-${Math.random().toString(36).slice(2,7)}`, title: body.slice(0, 36) || "图片分享", body, media, createdAt, author: p.owner || "我", likes: 0, liked: false, saved: false, comments: [] };
     save({ posts: [post, ...state.posts] });
   };
   const toggleLike = (post: LocalSocialPost) => {
@@ -147,7 +147,7 @@ function LocalSocialFeed({ p, app, items }: { p: Props; app: "weibo" | "redbook"
 function LocalSocialCard({ app, post, onLike, onSave, onComment }: { app: "weibo" | "redbook"; post: LocalSocialPost; onLike: () => void; onSave: () => void; onComment: (body: string) => void }) {
   const [comment, setComment] = useState("");
   return <article className={`local-social-card ${app}`}>
-    <div className="local-social-author"><Avatar name={post.id.startsWith("local-") ? "我" : post.comments[0]?.author || "用户"} /><div><strong>{post.id.startsWith("local-") ? "我" : "用户"}</strong><small>{post.createdAt}</small></div></div>
+    <div className="local-social-author"><Avatar name={post.author || "用户"} /><div><strong>{post.author || "用户"}</strong><small>{post.createdAt}</small></div></div>
     {post.body && <p className="local-social-body">{post.body}</p>}
     {post.media && <img className="local-social-post-image" src={post.media} alt="帖子图片" />}
     <div className="local-social-actions">
