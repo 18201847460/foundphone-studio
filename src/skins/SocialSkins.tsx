@@ -88,7 +88,7 @@ function LocalSocialComposer({ app, onPublish }: { app: "weibo" | "redbook"; onP
     {error && <small className="local-social-error" role="status">{error}</small>}
   </form>;
 }
-function LocalSocialFeed({ p, app, items }: { p: Props; app: "weibo" | "redbook"; items: Item[] }) {
+function LocalSocialFeed({ p, app, items, savedOnly = false }: { p: Props; app: "weibo" | "redbook"; items: Item[]; savedOnly?: boolean }) {
   const [raw, setRaw] = useSkinState<string>(p, "local-social-feed-v1", JSON.stringify(emptySocialState));
   const state = readLocalState(raw);
   const save = (next: LocalSocialState) => setRaw(JSON.stringify(next));
@@ -137,7 +137,7 @@ function LocalSocialFeed({ p, app, items }: { p: Props; app: "weibo" | "redbook"
     save({ posts: state.posts.filter((x) => x.id !== post.id).concat({ ...post, comments: [...post.comments, { author: p.owner || "我", body: body.trim() }] }) });
   };
   const toggleSave = (post: LocalSocialPost) => save({ posts: state.posts.filter((x) => x.id !== post.id).concat({ ...post, saved: !post.saved }) });
-  const visiblePosts = app === "redbook" ? posts : posts;
+  const visiblePosts = savedOnly ? posts.filter((post) => post.saved) : posts;
   return <div className={`local-social-feed ${app}`}>
     <LocalSocialComposer app={app} onPublish={publish} />
     {visiblePosts.map((post) => <LocalSocialCard key={post.id} app={app} post={post} onLike={() => toggleLike(post)} onSave={() => toggleSave(post)} onComment={(body) => addComment(post, body)} />)}
@@ -448,12 +448,7 @@ export function FacebookSkin(p: Props) {
 }
 export function RedbookSkin(p: Props) {
   const { tab, setTab, q, setQ, items } = useContent(p, "发现");
-  const list =
-    tab === "收藏"
-      ? items.filter((i) => i.favorite)
-      : tab === "关注"
-        ? items.filter((i) => i.folder === "关注")
-        : items;
+  const list = tab === "关注" ? items.filter((i) => i.folder === "关注") : items;
   return (
     <div className="catalog-skin redbook-ui">
       <Header p={p} />
@@ -470,7 +465,7 @@ export function RedbookSkin(p: Props) {
       </div>
       <div className="catalog-scroll">
         <SearchBox value={q} set={setQ} />
-        <LocalSocialFeed p={p} app="redbook" items={list} />
+        <LocalSocialFeed p={p} app="redbook" items={list} savedOnly={tab === "收藏"} />
       </div>
       <Tabs
         tabs={["发现", "收藏"]}
