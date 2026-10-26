@@ -3,7 +3,7 @@
   "id": "foundphone-personal-story",
   "title": "捡手机",
   "description": "个人化手机故事",
-  "revision": 6,
+  "revision": 7,
   "phone": {
     "owner": "机主",
     "date": "2026-10-26",
@@ -244,21 +244,45 @@
         },
         {
           "id": "zhuxixin-07",
-          "body": "别看微博。",
+          "body": "看见微博了？",
           "senderId": "zhuxixin",
           "time": "09:48"
         },
         {
           "id": "zhuxixin-08",
-          "body": "我已经找公司了。",
+          "body": "本来想再等等的",
           "senderId": "zhuxixin",
           "time": "09:48"
         },
         {
           "id": "zhuxixin-09",
-          "body": "现在网上那些都还没弄清楚，别跟着他们的话走。",
+          "body": "但是看他们那样说你，我等不了了",
           "senderId": "zhuxixin",
           "time": "09:49"
+        },
+        {
+          "id": "zhuxixin-10",
+          "body": "那你现在打算怎么办",
+          "senderId": "owner",
+          "time": "09:49"
+        },
+        {
+          "id": "zhuxixin-11",
+          "body": "先把该处理的处理好",
+          "senderId": "zhuxixin",
+          "time": "09:49"
+        },
+        {
+          "id": "zhuxixin-12",
+          "body": "你不用管网上那些人",
+          "senderId": "zhuxixin",
+          "time": "09:49"
+        },
+        {
+          "id": "zhuxixin-13",
+          "body": "她们影响不到我们",
+          "senderId": "zhuxixin",
+          "time": "09:50"
         }
       ]
     }
@@ -1025,6 +1049,90 @@
         "meta": {
           "fictional": "true",
           "incident": "围攻与隐私泄露剧情"
+        }
+      },
+      {
+        "id": "wb-zhuxixin-reply-01",
+        "title": "回复 @今天只想脱粉",
+        "body": "不要再发了",
+        "time": "09:50",
+        "sender": "朱志鑫",
+        "avatar": "",
+        "kind": "post",
+        "likes": 18342,
+        "comments": [
+          "本人下场回复了？",
+          "这条是在说刚刚那条吧",
+          "先别吵了，等后续"
+        ],
+        "meta": {
+          "fictional": "true",
+          "activityType": "reply",
+          "replyTo": "为了她连粉丝都不要了？",
+          "topic": "朱志鑫疑似恋情"
+        }
+      },
+      {
+        "id": "wb-zhuxixin-reply-02",
+        "title": "回复 @不懂就问问",
+        "body": "我觉得好就够了",
+        "time": "09:51",
+        "sender": "朱志鑫",
+        "avatar": "",
+        "kind": "post",
+        "likes": 26781,
+        "comments": [
+          "这个意思已经很明显了",
+          "他居然亲自回复",
+          "评论区要炸了"
+        ],
+        "meta": {
+          "fictional": "true",
+          "activityType": "reply",
+          "replyTo": "真不知道她有什么好的，也值得你这样",
+          "topic": "朱志鑫疑似恋情"
+        }
+      },
+      {
+        "id": "wb-zhuxixin-reply-03",
+        "title": "回复 @路人甲",
+        "body": "这件事跟你没关系",
+        "time": "09:52",
+        "sender": "朱志鑫",
+        "avatar": "",
+        "kind": "post",
+        "likes": 21904,
+        "comments": [
+          "语气好冷",
+          "确实没必要对着人家女朋友说这些",
+          "截图已经传开了"
+        ],
+        "meta": {
+          "fictional": "true",
+          "activityType": "reply",
+          "replyTo": "她不会真觉得自己配得上吧",
+          "topic": "朱志鑫疑似恋情"
+        }
+      },
+      {
+        "id": "wb-zhuxixin-reply-04",
+        "title": "回复 @别来沾边",
+        "body": "她没做错什么，需要管什么",
+        "time": "09:53",
+        "sender": "朱志鑫",
+        "avatar": "",
+        "kind": "post",
+        "likes": 30112,
+        "comments": [
+          "连续回复好几条了",
+          "他是真的不想让她被骂",
+          "别再去打扰普通人了"
+        ],
+        "meta": {
+          "fictional": "true",
+          "activityType": "reply",
+          "replyTo": "能不能管好你女朋友，别出来影响别人",
+          "topic": "朱志鑫疑似恋情"
         }
       }
     ],
