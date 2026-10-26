@@ -3,7 +3,7 @@
   "id": "foundphone-personal-story",
   "title": "捡手机",
   "description": "个人化手机故事",
-  "revision": 7,
+  "revision": 8,
   "phone": {
     "owner": "机主",
     "date": "2026-10-26",
@@ -265,24 +265,6 @@
           "body": "那你现在打算怎么办",
           "senderId": "owner",
           "time": "09:49"
-        },
-        {
-          "id": "zhuxixin-11",
-          "body": "先把该处理的处理好",
-          "senderId": "zhuxixin",
-          "time": "09:49"
-        },
-        {
-          "id": "zhuxixin-12",
-          "body": "你不用管网上那些人",
-          "senderId": "zhuxixin",
-          "time": "09:49"
-        },
-        {
-          "id": "zhuxixin-13",
-          "body": "她们影响不到我们",
-          "senderId": "zhuxixin",
-          "time": "09:50"
         }
       ]
     }
@@ -1665,6 +1647,69 @@
     ]
   },
   "variables": {},
-  "events": [],
-  "tests": []
+  "events": [
+    {
+      "id": "zhuxixin-decision",
+      "label": "选择怎么回应朱志鑫",
+      "type": "choice",
+      "event": "read",
+      "target": "zhuxixin-10",
+      "next": [
+        "zhuxixin-route-a",
+        "zhuxixin-route-b"
+      ]
+    },
+    {
+      "id": "zhuxixin-route-a",
+      "label": "A：问他为什么没提前说",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "A：你问他发微博前为什么没告诉你\n朱志鑫：本来想说的\n朱志鑫：怕你不让我发\n朱志鑫：不会生气吧？\n朱志鑫：等会儿给你打电话，别不接"
+        }
+      ]
+    },
+    {
+      "id": "zhuxixin-route-b",
+      "label": "B：问他接下来打算怎么办",
+      "type": "ending",
+      "actions": [
+        {
+          "type": "ending",
+          "key": "",
+          "value": "B：朱志鑫先把该处理的处理好\n朱志鑫：你不用管网上那些人\n朱志鑫：她们影响不到我们"
+        }
+      ]
+    }
+  ],
+  "tests": [
+    {
+      "name": "zhuxixin-route-a",
+      "steps": [
+        {
+          "event": "read",
+          "target": "zhuxixin-10"
+        },
+        {
+          "choose": "zhuxixin-route-a"
+        }
+      ],
+      "ending": "A：你问他发微博前为什么没告诉你\n朱志鑫：本来想说的\n朱志鑫：怕你不让我发\n朱志鑫：不会生气吧？\n朱志鑫：等会儿给你打电话，别不接"
+    },
+    {
+      "name": "zhuxixin-route-b",
+      "steps": [
+        {
+          "event": "read",
+          "target": "zhuxixin-10"
+        },
+        {
+          "choose": "zhuxixin-route-b"
+        }
+      ],
+      "ending": "B：朱志鑫先把该处理的处理好\n朱志鑫：你不用管网上那些人\n朱志鑫：她们影响不到我们"
+    }
+  ]
 }
