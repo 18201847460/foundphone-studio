@@ -66,7 +66,7 @@ function LocalSocialComposer({ app, onPublish }: { app: "weibo" | "redbook"; onP
     const reader = new FileReader();
     reader.onload = () => {
       const data = typeof reader.result === "string" ? reader.result : "";
-      if (data && /^data:image\\/(png|jpeg|webp|gif);base64,/.test(data)) {
+      if (data && /^data:image\/(png|jpeg|webp|gif);base64,/.test(data)) {
         setMedia(data); setFileName(file.name); setError("");
       } else setError("这张图片暂时无法读取");
     };
